@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baly Company Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: #1800ad;
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            color: #e6e6ff;
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 4px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+        }
+        
+        .contact-list, .instructions-list, .locations-list, .emergency-list {
+            list-style-type: none;
+        }
+        
+        .contact-list li, .instructions-list li, .locations-list li, .emergency-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .icon {
+            font-size: 1.2rem;
+            width: 30px;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .location-link, .phone-link {
+            color: #a3d2ff;
+            text-decoration: none;
+        }
+        
+        .location-link:hover, .phone-link:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        
+        .emergency-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .emergency-number {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"><i class="fas fa-building"></i></div>
+            <h1>Welcome to Baly Company!</h1>
+            <p class="subtitle">Your Quick Guide for a Smooth Start</p>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-users"></i> Points of Contact</h2>
+            <ul class="contact-list">
+                <li><span class="icon"><i class="fas fa-female"></i></span> Shahad Mohammed – HR</li>
+                <li><span class="icon"><i class="fas fa-calculator"></i></span> Fakih – Finance</li>
+                <li><span class="icon"><i class="fas fa-user-tie"></i></span> Abualhasan – HR</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-clipboard-list"></i> Important Instructions</h2>
+            <ul class="instructions-list">
+                <li><span class="icon"><i class="fas fa-passport"></i></span> Always carry your passport with you</li>
+                <li><span class="icon"><i class="fas fa-hotel"></i></span> If staying at IQ Gate, carry your authorization letter</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-map-marker-alt"></i> Locations</h2>
+            <ul class="locations-list">
+                <li><span class="icon"><i class="fas fa-building"></i></span> Baly HQ – <a href="https://maps.app.goo.gl/4kDDmwor1GvF7kTD7" class="location-link" target="_blank">View on Map</a></li>
+                <li><span class="icon"><i class="fas fa-door-open"></i></span> IQ Gate – <a href="https://maps.app.goo.gl/j3VHRQ13mDkzRVc29" class="location-link" target="_blank">View on Map</a></li>
+                <li><span class="icon"><i class="fas fa-home"></i></span> Guesthouse – <a href="https://maps.app.goo.gl/TvstHrwvPwxwBr4x8" class="location-link" target="_blank">View on Map</a></li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-mobile-alt"></i> SIM Card & Keys</h2>
+            <ul class="instructions-list">
+                <li><span class="icon"><i class="fas fa-sim-card"></i></span> Get a SIM card through the HR team</li>
+                <li><span class="icon"><i class="fas fa-key"></i></span> Collect and return room key from the designated person</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-hands-helping"></i> Cultural Norms & Guidelines</h2>
+            <ul class="instructions-list">
+                <li><span class="icon"><i class="fas fa-clock"></i></span> Be punctual</li>
+                <li><span class="icon"><i class="fas fa-ban"></i></span> Avoid sensitive topics (religion, politics)</li>
+                <li><span class="icon"><i class="fas fa-tshirt"></i></span> Dress modestly in public areas</li>
+                <li><span class="icon"><i class="fas fa-handshake"></i></span> Respect local customs</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-exclamation-triangle"></i> Emergency Contacts</h2>
+            <ul class="emergency-list">
+                <li class="emergency-item">
+                    <span>Shahad:</span>
+                    <a href="tel:07722007742" class="phone-link emergency-number">07722007742</a>
+                </li>
+                <li class="emergency-item">
+                    <span>Fakih:</span>
+                    <a href="tel:07748114435" class="phone-link emergency-number">07748114435</a>
+                </li>
+                <li class="emergency-item">
+                    <span>Abualhasan:</span>
+                    <a href="tel:07808847920" class="phone-link emergency-number">07808847920</a>
+                </li>
+                <li class="emergency-item">
+                    <span>Police:</span>
+                    <span class="emergency-number">104</span>
+                </li>
+                <li class="emergency-item">
+                    <span>Ambulance:</span>
+                    <span class="emergency-number">122</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
